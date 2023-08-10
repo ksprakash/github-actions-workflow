@@ -1,0 +1,14 @@
+name: "Actions Workflow"
+on: [push,pull_request]
+jobs:
+    RunningShellScripts:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Echo a String"
+              run: echo "Hello World"
+            - name: "Multiline Script"
+              run: |
+                node -v
+                npm -v
+            
+        
