@@ -24,7 +24,7 @@ jobs:
             - name: "Run a python programming"
               run: |
                  import os
-                 print(os.dir())
+                 print(os.curdir)
               shell: python
 
               
