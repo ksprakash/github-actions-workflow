@@ -15,11 +15,17 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Display  ubuntu version"
-              run: cats /etc/os-release
+              run: cat /etc/os-release
             - name: "Display release verison of runner"
               run: |
                 uname -a
                 ls -la /home
+                pip install boto3
+            - name: "Run a python programming"
+              run: |
+                 import os
+                 print(os.dir())
+              shell: python
 
               
             
