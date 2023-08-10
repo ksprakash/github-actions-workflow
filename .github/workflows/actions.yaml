@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: "Display  ubuntu version"
-              run: cat /etc/os-release
+              run: cats /etc/os-release
             - name: "Display release verison of runner"
               run: |
                 uname -a
