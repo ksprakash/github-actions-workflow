@@ -10,5 +10,17 @@ jobs:
               run: |
                 node -v
                 npm -v
+
+    ImplementationOfActions:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "Display  ubuntu version"
+              run: cat /etc/os-release
+            - name: "Display release verison of runner"
+              run: |
+                uname -a
+                ls -la /home
+
+              
             
         
